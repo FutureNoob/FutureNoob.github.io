@@ -3,8 +3,28 @@
     padding: 0;
 }
 
-body {
+html {
     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+body {
     overflow: auto;
     box-sizing: border-box;
     background-color: rgb(46,46,46);
@@ -58,6 +78,17 @@ body {
     padding: 20px 1%;
     font-size: 40px;;
     color: white;
+}
+
+.left-paragraph {
+    color: white;
+    font-family: "Manjar", sans-serif;
+    padding: 10px 2%;
+    padding-top: 20px;
+    font-size: 0.8vw;
+    width: 300px;
+    float: right;
+    text-align: center;
 }
 
 .logo {
@@ -155,6 +186,9 @@ li, a {
         display: flex;
     }
     .otherbuttons {
+        display: none;
+    }
+    .left-paragraph {
         display: none;
     }
 }

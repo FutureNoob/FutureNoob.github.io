@@ -2,39 +2,28 @@
     margin: 0;
     padding: 0;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
- 
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-
 body {
     overflow: auto;
     box-sizing: border-box;
     background-color: rgb(46,46,46);
 }
 
-.menu {
-    padding: 15px;
-    display: none;
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+   width: 15px;          
+}
+::-webkit-scrollbar-thumb {   
+    border-radius: 50px;
+    background: linear-gradient(to top, #0033cc 0%, #0099ff 48%);
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -5px -5px 5px rgba(0,0,0,.25);
 }
 
+/*Elements*/
+
+.menu {
+    display: none;
+}
 .topbar {
     margin: auto;
     display: flex;
@@ -43,140 +32,93 @@ body {
     padding: 10px 4%;
 }
 
-.topbackground {
+.imagesections {
     height: auto;
-    background: url(images/ssf2background.gif) no-repeat center;
     background-attachment: fixed;
-    background-size: cover;
     z-index: -1;
 }
-
-.aboutbackground {
-    height: auto;
-    background: url(images/About.gif) no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;
-    z-index: -1;
-}
-
-.textoverbackground {
-    font-family: "Manjar", sans-serif;
+.imagesectiontext {
+    text-shadow: 4px 4px 10px rgba(0, 0 ,0, 0.4);
+    font-family: "Open Sans", sans-serif;
     z-index: 2;
     position: relative;
-    width: 30%;
     color: white;
     margin: auto;
-    padding: 50px 0;
+    padding: 25px 15%;
     text-align: center;
     background: none;
 }
 
-.sectiontabs {
+.gamesectiontext {
     position: relative;
-    font-family: "Manjar", sans-serif;
-    padding: 10px 1%;
-    font-size: 40px;;
+    font-family: "Open Sans", sans-serif;
+    padding: 15px 1%;
+    font-size: 30px;
     color: white;
 }
-
-.left-paragraph {
-    color: white;
-    font-family: "Manjar", sans-serif;
-    padding: 10px 2%;
-    padding-top: 20px;
-    font-size: 0.8vw;
-    width: 300px;
-    float: right;
-    text-align: center;
-}
-
-.logo {
+.gamethumb {
+    padding: 5px;
+    background: none;
     cursor: pointer;
+    transition: all 0.1s ease-in-out 0s;
+    
+}
+.gamethumb:hover {
+    opacity: 0.5;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0);
+}
+.gametab {
+    margin: 0 auto;
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    overflow: auto;
+}
+
+button {
+    background: none;
+    color: dodgerblue;
+    padding: 10px;
+    border: 1px solid dodgerblue;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: .5s;
+    overflow: hidden;
+}
+button:hover {
+    background-color: dodgerblue;
+    cursor: pointer;
+    color: white;
 }
 
 .navlinks {
     margin: auto;
     list-style: none;
 }
-
 .navlinks li {
     display: inline-block;
-    padding: 0px 30px;
 }
-
 .navlinks li a {
     transition: all 0.3s ease 0s;
+    padding: 25px;
+    margin: 10px;
 }
-
 .navlinks li a:hover {
     color: dodgerblue;
 }
 
-.searchbutton {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-family: "Manjar", sans-serif;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-}
-
-.searchbutton:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-}
-
-.otherbuttons {
-    color: white;
-    padding: 0.5% 5%;
-    font-family: "Manjar", sans-serif;
-    font-size: 1.5vw;
-    text-decoration: none;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
 li, a {
-    font-family: "Manjar", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     color: white;
     text-decoration: none;
 }
-
 .activebutton {
     color: dodgerblue;
 }
 
-.GameTab {
-    background: none;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    overflow: auto;
-}
-
-.gamethumb {
-    background: none;
-    padding: 0.5rem;
-    margin: auto;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out 0s;
-}
-
-.gamethumb:hover{
-    box-shadow: 0px 0px 5px black;
-    padding-left: 20px;
-    padding-right: 20px;
-    opacity: 0.3;
-}
-
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 950px) {
     .navlinks {
         display: none;
     }
@@ -189,7 +131,7 @@ li, a {
         padding: 10px;
     }
     .topbar {
-        padding: 10px;
+        padding: 10px 10%;
     }
     .menu {
         display: flex;

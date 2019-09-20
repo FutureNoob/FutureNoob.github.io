@@ -2,6 +2,7 @@
 <html>
     
     <head>
+        <link rel="icon" type="image/png" href="images/GNWebLogo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
@@ -10,15 +11,21 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js" defer></script>
         
-        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/8544168b23.js"></script>
- 
+        
+        <script>
+            function UnavaliableGame() {
+                alert("This game is currently unavaliable...");
+            }
+        </script>
         
         <title>Gaming Noobs</title>
     </head>
     <body>
-        <section class="topbar">
-            <img src="images/websitelogo2.png" alt="Logo" width="100px" height="50px" class ="logo">
+        
+        <nav class="topbar">
+            <img src="images/websitelogo2.png" alt="Logo" width="100px" height="50px">
             <ul class="navlinks">
                 <li><a class="activebutton" href="index.html">Home</a></li>
                 <li><a href="games.html">Games</a></li>
@@ -28,29 +35,67 @@
             </ul>
             <a href="#"><button class="searchbutton">Search</button></a>
             <a class="menu" href="menu"><i class="fas fa-bars" style="font-size: 30px;"></i></a>
-        </section>
-        <section>
-            <div class="topbackground"><div class="textoverbackground">
+        </nav>
+        <div class="imagesections" style="height: auto; background: url(images/GradientBackground.gif) no-repeat center; background-size: cover;">
+            <div class="imagesectiontext">
                 <h1 style="font-size: 4vw;">
-                    Where <strong>gaming</strong> starts today.
+                    Where gaming starts today.
                 </h1>
-                <a href="#"><button class="otherbuttons" style="margin-top: 20px;">Search For Games</button></a>
-            </div></div>
-        </section>
-        <section style="background-color: rgb(38, 38, 38); height: auto;">
-            <h1 class="sectiontabs">Popular</h1>
-            <div class="GameTab">
+                <p style="font-size: 2vw;">
+                    Check out the plethera of games below to choose from and explore! Go to the games tab to find even more!
+                </p>
+            </div>
+        </div>
+        <div style="background-color: rgb(38, 38, 38); height: auto;">
+            <h1 style="color: orange;" class="gamesectiontext">Popular <i style="color: orange;" class="fas fa-fire-alt"></i></h1>
+            <div class="gametab">
                 <a onclick="window.open('games/ssf2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/SSF2Logo.jpg" alt="placeholder" width="400px" height="200px"></a>
                 <a onclick="window.open('https://krunker.io','name','width=1080,height=720')"><img class="gamethumb" src="images/KrunkerThumb.png" alt="placeholder" width="400px" height="200px"></a>
                 <a onclick="window.open('https://bullet-force.io//bullet-force.embed','name','width=1080,height=720')"><img class="gamethumb" src="images/BFThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
                 <a onclick="window.open('https://zombsroyale.io/','name','width=1080,height=720')"><img class="gamethumb" src="images/ZombsThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
                 <a onclick="window.open('games/gmr.html','name','width=1080,height=720')"><img class="gamethumb" src="images/GMRThumb.png" alt="placeholder" width="400px" height="200px"></a>
             </div>
-            <h1 class="sectiontabs">Strategy</h1>
+            <h1 class="gamesectiontext">Strategy <i class="fas fa-chess"></i></h1>
+            <div class="gametab">
+                <a onclick="window.open('games/btd5.html','name','width=1080,height=720')"><img class="gamethumb" src="images/BTD5Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/ptd.html','name','width=1080,height=720')"><img class="gamethumb" src="images/PTDThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/at2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/AT2Thumb.png" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/sw2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/SW2Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/con4.html','name','width=1080,height=720')"><img class="gamethumb" src="images/CON4.jpg" alt="placeholder" width="400px" height="200px"></a>
+            </div>
+            <h1 class="gamesectiontext">Action <i class="fas fa-exclamation-triangle"></i></h1>
+            <div class="gametab">
+                <a onclick="window.open('games/ltf3.html','name','width=1080,height=720')"><img class="gamethumb" src="images/LTF3Thumb.png" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/dl4.html','name','width=1080,height=720')"><img class="gamethumb" src="images/DuckLifeThumb.png" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/em2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/EM2Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/got.html','name','width=650,height=400')"><img class="gamethumb" src="images/GOTThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/tt3.html','name','width=1080,height=720')"><img class="gamethumb" src="images/TankTrouble.png" alt="placeholder" width="400px" height="200px"></a>
+            </div>
+        </div>
+        <div style="background-color: rgb(38, 38, 38); height: 4vw;"></div>
+        <div class="imagesections" style="height: auto; background: url(images/GradientBackground2.gif) no-repeat center; background-size: cover;">
+            <div class="imagesectiontext">
+                <h1 style="font-size: 4vw;">
+                    Learn more about us!
+                </h1>
+                <p style="font-size: 2vw;">
+                    Want to know more about our website and the development behind it? Check out the about page for more info!
+                </p>
+            </div>
+        </div>
+        <footer style="background-color: rgb(30,30,30); display: flex; margin: auto;">
+            <img src="images/websitelogo2.png" alt="Logo" width="100px" height="50px" class ="logo" style="padding: 20px;">
+        </footer>
+    </body>
+</html>
+
+<!-- 
+<a onclick="UnavaliableGame()"><img class="gamethumb" src="images/NIL.jpg" alt="placeholder" width="400px" height="200px"></a>
+<h1 class="sectiontabs">Strategy</h1>
             <div class="GameTab">
                 <a onclick="window.open('games/btd5.html','name','width=1080,height=720')"><img class="gamethumb" src="images/BTD5Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
                 <a onclick="window.open('games/ltf3.html','name','width=1080,height=720')"><img class="gamethumb" src="images/LTF3Thumb.png" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/ducklife4.html','name','width=1080,height=720')"><img class="gamethumb" src="images/DuckLifeThumb.png" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/dl4.html','name','width=1080,height=720')"><img class="gamethumb" src="images/DuckLifeThumb.png" alt="placeholder" width="400px" height="200px"></a>
                 <a onclick="window.open('games/tt2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/TankTrouble.png" alt="placeholder" width="400px" height="200px"></a>
                 <a onclick="window.open('games/got.html','name','width=650,height=400')"><img class="gamethumb" src="images/GOTThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
             </div>
@@ -62,10 +107,4 @@
                 <a onclick="window.open('#','name','width=1080,height=720')"><img class="gamethumb" src="images/NIL.jpg" alt="placeholder" width="400px" height="200px"></a>
                 <a onclick="window.open('#','name','width=650,height=400')"><img class="gamethumb" src="images/NIL.jpg" alt="placeholder" width="400px" height="200px"></a>
             </div>
-        </section>
-        <footer style="background-color: rgb(30,30,30); display: flex; margin: auto;">
-            <img src="images/websitelogo2.png" alt="Logo" width="100px" height="50px" class ="logo" style="padding: 20px;">
-            <p class="left-paragraph">Gaming Noobs was creating for entertainment purposes. Created to play from a wide variety of unblocked games anywhere at anytime.</p>
-        </footer>
-    </body>
-</html>
+-->

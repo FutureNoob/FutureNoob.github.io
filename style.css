@@ -52,8 +52,9 @@ body {
 .gamesectiontext {
     position: relative;
     font-family: "Open Sans", sans-serif;
-    padding: 15px 1%;
+    padding: 15px;
     font-size: 30px;
+    width: 50%;
     color: white;
 }
 .gamethumb {
@@ -61,11 +62,7 @@ body {
     background: none;
     cursor: pointer;
     transition: all 0.1s ease-in-out 0s;
-    
-}
-.gamethumb:hover {
-    opacity: 0.5;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0);
+    text-align: center;
 }
 .gametab {
     margin: 0 auto;
@@ -75,12 +72,38 @@ body {
     grid-gap: 10px;
     overflow: auto;
 }
+.gamecontainer {
+    position: relative;
+    font-family: "Open Sans" , sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+.gamethumbtext {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-size: 30px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    padding-bottom: 10px;
+    transition: all 0.1s ease-in-out 0s;
+    cursor: pointer;
+}
+.gamecontainer:hover .gamethumbtext {
+    opacity: 1;
+}
+.gamecontainer:hover .gamethumb {
+    opacity: 0.5;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0);
+}
 
 button {
     background: none;
-    color: dodgerblue;
+    color: white;
     padding: 10px;
-    border: 1px solid dodgerblue;
+    border: 1px solid white;
     font-size: 18px;
     border-radius: 10px;
     transition: .5s;

@@ -23,7 +23,6 @@
         <title>Gaming Noobs</title>
     </head>
     <body>
-        
         <nav class="topbar">
             <img src="images/websitelogo2.png" alt="Logo" width="100px" height="50px">
             <ul class="navlinks">
@@ -33,9 +32,10 @@
                 <li><a href="updates.html">Updates</a></li>
                 <li><a href="credits.html">Credits</a></li>
             </ul>
-            <a href="#"><button class="searchbutton">Search</button></a>
+            <a href="#"><button class="searchbutton"><i class="fas fa-search"></i> Search </button></a>
             <a class="menu" href="menu"><i class="fas fa-bars" style="font-size: 30px;"></i></a>
         </nav>
+        
         <div class="imagesections" style="height: auto; background: url(images/GradientBackground.gif) no-repeat center; background-size: cover;">
             <div class="imagesectiontext">
                 <h1 style="font-size: 4vw;">
@@ -46,33 +46,116 @@
                 </p>
             </div>
         </div>
+        
         <div style="background-color: rgb(38, 38, 38); height: auto;">
+            <a href="#"><button style="margin: 13px 1%; padding: 10px 5%; float: right;">See All</button></a>
             <h1 style="color: orange;" class="gamesectiontext">Popular <i style="color: orange;" class="fas fa-fire-alt"></i></h1>
             <div class="gametab">
-                <a onclick="window.open('games/ssf2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/SSF2Logo.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('https://krunker.io','name','width=1080,height=720')"><img class="gamethumb" src="images/KrunkerThumb.png" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('https://bullet-force.io//bullet-force.embed','name','width=1080,height=720')"><img class="gamethumb" src="images/BFThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('https://zombsroyale.io/','name','width=1080,height=720')"><img class="gamethumb" src="images/ZombsThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/gmr.html','name','width=1080,height=720')"><img class="gamethumb" src="images/GMRThumb.png" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/ssf2.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/SSF2Logo.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Super Smash Flash 2</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('https://krunker.io','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/KrunkerThumb.png" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Krunker.io</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('https://bullet-force.io//bullet-force.embed','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/BFThumb.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Bullet Force</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('https://zombsroyale.io/','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/ZombsThumb.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Zombs Royale</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/gmr.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/GMRThumb.png" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Gun Mayhem REDUX</h5>
+                    </div>
+                </a>
             </div>
+            
+            <a href="#"><button style="margin: 13px 1%; padding: 10px 5%; float: right;">See All</button></a>
             <h1 class="gamesectiontext">Strategy <i class="fas fa-chess"></i></h1>
             <div class="gametab">
-                <a onclick="window.open('games/btd5.html','name','width=1080,height=720')"><img class="gamethumb" src="images/BTD5Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/ptd.html','name','width=1080,height=720')"><img class="gamethumb" src="images/PTDThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/at2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/AT2Thumb.png" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/sw2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/SW2Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/con4.html','name','width=1080,height=720')"><img class="gamethumb" src="images/CON4.jpg" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/btd5.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/BTD5Thumb.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Bloons Tower Defense 5</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/ptd.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/PTDThumb.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Pokemon Tower Defense</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/at2.html','name','width=1080,height=720')" class="gamecontainer"> 
+                    <img class="gamethumb" src="images/AT2Thumb.png" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Awesome Tanks 2</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/sw2.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/SW2Thumb.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Stick War 2 Order Empire</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/con4.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/CON4.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Connect 4 Flash</h5>
+                    </div>
+                </a>
             </div>
+            
+            <a href="#"><button style="margin: 13px 1%; padding: 10px 5%; float: right;">See All</button></a>
             <h1 class="gamesectiontext">Action <i class="fas fa-exclamation-triangle"></i></h1>
             <div class="gametab">
-                <a onclick="window.open('games/ltf3.html','name','width=1080,height=720')"><img class="gamethumb" src="images/LTF3Thumb.png" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/dl4.html','name','width=1080,height=720')"><img class="gamethumb" src="images/DuckLifeThumb.png" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/em2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/EM2Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/got.html','name','width=650,height=400')"><img class="gamethumb" src="images/GOTThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/tt3.html','name','width=1080,height=720')"><img class="gamethumb" src="images/TankTrouble.png" alt="placeholder" width="400px" height="200px"></a>
+                <a onclick="window.open('games/ltf3.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/LTF3Thumb.png" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Learn to Fly 3</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/dl4.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/DuckLifeThumb.png" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Duck Life 4</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/em2.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/EM2Thumb.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Electricman 2</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/got.html','name','width=650,height=400')" class="gamecontainer">
+                    <img class="gamethumb" src="images/GOTThumb.jpg" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Get On Top!</h5>
+                    </div>
+                </a>
+                <a onclick="window.open('games/tt3.html','name','width=1080,height=720')" class="gamecontainer">
+                    <img class="gamethumb" src="images/TankTrouble.png" alt="placeholder" width="400px" height="200px">
+                    <div class="gamethumbtext">
+                        <h5>Tank Trouble</h5>
+                    </div>
+                </a>
             </div>
         </div>
+        
         <div style="background-color: rgb(38, 38, 38); height: 4vw;"></div>
+        
         <div class="imagesections" style="height: auto; background: url(images/GradientBackground2.gif) no-repeat center; background-size: cover;">
             <div class="imagesectiontext">
                 <h1 style="font-size: 4vw;">
@@ -83,28 +166,9 @@
                 </p>
             </div>
         </div>
+        
         <footer style="background-color: rgb(30,30,30); display: flex; margin: auto;">
             <img src="images/websitelogo2.png" alt="Logo" width="100px" height="50px" class ="logo" style="padding: 20px;">
         </footer>
     </body>
 </html>
-
-<!-- 
-<a onclick="UnavaliableGame()"><img class="gamethumb" src="images/NIL.jpg" alt="placeholder" width="400px" height="200px"></a>
-<h1 class="sectiontabs">Strategy</h1>
-            <div class="GameTab">
-                <a onclick="window.open('games/btd5.html','name','width=1080,height=720')"><img class="gamethumb" src="images/BTD5Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/ltf3.html','name','width=1080,height=720')"><img class="gamethumb" src="images/LTF3Thumb.png" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/dl4.html','name','width=1080,height=720')"><img class="gamethumb" src="images/DuckLifeThumb.png" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/tt2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/TankTrouble.png" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/got.html','name','width=650,height=400')"><img class="gamethumb" src="images/GOTThumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-            </div>
-            <h1 class="sectiontabs">Action</h1>
-            <div class="GameTab">
-                <a onclick="window.open('games/sw2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/SW2Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/smf.html','name','width=1080,height=720')"><img class="gamethumb" src="images/SMF2.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('games/em2.html','name','width=1080,height=720')"><img class="gamethumb" src="images/EM2Thumb.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('#','name','width=1080,height=720')"><img class="gamethumb" src="images/NIL.jpg" alt="placeholder" width="400px" height="200px"></a>
-                <a onclick="window.open('#','name','width=650,height=400')"><img class="gamethumb" src="images/NIL.jpg" alt="placeholder" width="400px" height="200px"></a>
-            </div>
--->

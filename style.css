@@ -20,9 +20,9 @@ body {
 }
 
 /*Elements*/
-
 .menu {
     display: none;
+    cursor: pointer;
 }
 .topbar {
     margin: auto;
@@ -30,6 +30,27 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 4%;
+}
+
+.hamburgericon {
+    display: none;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+.change .bar2 {
+    opacity: 0;
 }
 
 .imagesections {
@@ -63,6 +84,8 @@ body {
     cursor: pointer;
     transition: all 0.1s ease-in-out 0s;
     text-align: center;
+    transform-origin: center center;
+    margin: 0 auto;
 }
 .gametab {
     margin: 0 auto;
@@ -75,7 +98,7 @@ body {
 .gamecontainer {
     position: relative;
     font-family: "Open Sans" , sans-serif;
-    margin: 0 auto;
+    margin: 1 auto;
     text-align: center;
 }
 .gamethumbtext {
@@ -97,6 +120,8 @@ body {
 .gamecontainer:hover .gamethumb {
     opacity: 0.5;
     box-shadow: 0px 0px 15px rgba(0, 0, 0);
+    filter: blur(1px);
+    transform: scale(0.9);
 }
 
 button {
@@ -131,6 +156,95 @@ button:hover {
     color: dodgerblue;
 }
 
+.searchbar {
+    position: relative;
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    display: inline-block;
+}
+#searchcontent {
+    list-style-type: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 5;
+    top: 100%;
+    display: none;
+    height: auto;
+    max-height: 200px;
+    overflow: auto;
+}
+.searchbutton {
+    border: 1px solid white;
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    transition: 0.4s;
+}
+#searchtext {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+}
+.searchcontenttext {
+    color: black;
+    cursor: pointer;
+}
+#searchcontent:hover {
+    display: block;
+}
+.searchbar:hover > #searchcontent {
+    display: block;
+}
+.searchcontenttext:hover > #searchcontent {
+    display: block;
+}
+
+#overlayeffect {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    cursor: pointer;
+}
+
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
 li, a {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -141,7 +255,7 @@ li, a {
     color: dodgerblue;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1200px) {
     .navlinks {
         display: none;
     }
@@ -156,13 +270,19 @@ li, a {
     .topbar {
         padding: 10px 10%;
     }
-    .menu {
-        display: flex;
+    .hamburgericon {
+        display: inline-block;
     }
     .otherbuttons {
         display: none;
     }
     .left-paragraph {
+        display: none;
+    }
+    .searchtext {
+        display: none;
+    }
+    .searchbar {
         display: none;
     }
 }
